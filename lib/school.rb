@@ -19,8 +19,10 @@ class School
     @roster[grade]
   end
 
+# {9 => ["Homer Simpson","Bart Simpson"], 10 => ["Jeff Baird", "Avi Flombaum"], 7 => ["Jack Bauer","Blake Johnson"]}
+# {7 => ["Blake Johnson", "Jack Bauer"], 9 => ["Bart Simpson", "Homer Simpson"], 10 => ["Avi Flombaum", "Jeff Baird"]}
+
   def sort
-    #@roster.sort.to_h
     @roster.each do |grade, names|
       @roster[grade] = @roster[grade].sort
     end
