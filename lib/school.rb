@@ -24,8 +24,8 @@
     end
 
      def sort
-      @roster.each do |key, value|
-        value.sort!
-      end
+       @roster.each do |grade, name|
+      @roster[grade] = name.sort
+    end
     end
   end
